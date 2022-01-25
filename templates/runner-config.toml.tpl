@@ -14,6 +14,7 @@ listen_address = "127.0.0.1:9252"
   request_concurrency = ${runners_request_concurrency}
   output_limit = ${runners_output_limit}
   limit = ${runners_limit}
+  clone_url = "${runners_clone_url}"
   %{~ if runners_executor == "docker" ~}
   [runners.docker]
     tls_verify = false

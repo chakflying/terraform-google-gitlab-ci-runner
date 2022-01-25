@@ -144,6 +144,12 @@ variable "runners_gitlab_url" {
   default     = "https://gitlab.com"
 }
 
+variable "runners_clone_url" {
+  description = "Overwrite the URL for the GitLab instance when cloning."
+  type        = string
+  default     = "https://gitlab.com"
+}
+
 variable "runners_limit" {
   description = "Limit for the runners, will be used in the runner config.toml."
   type        = number

@@ -95,6 +95,7 @@ locals {
       runners_disable_cache          = var.runners_disable_cache
       runners_docker_runtime         = var.runners_docker_runtime
       runners_helper_image           = var.runners_helper_image
+      runners_clone_url              = var.runners_clone_url
       runners_shm_size               = var.runners_shm_size
       runners_pull_policy            = var.runners_pull_policy
       runners_idle_count             = var.runners_idle_count
