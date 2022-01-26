@@ -49,6 +49,7 @@ locals {
       gitlab_runner_access_level            = lookup(var.gitlab_runner_registration_config, "access_level", "not_protected")
       runners_config                        = local.template_runner_config
       runners_executor                      = var.runners_executor
+      runners_network                       = var.network
       runners_install_docker_credential_gcr = var.runners_install_docker_credential_gcr
       runners_gitlab_url                    = var.runners_gitlab_url
       runners_service_account               = google_service_account.agent.email

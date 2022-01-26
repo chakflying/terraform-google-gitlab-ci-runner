@@ -69,6 +69,7 @@ else
   docker-machine create --driver google \
       --google-project ${gcp_project} \
       --google-machine-type f1-micro \
+      --google-network ${runners_network} \
       --google-zone ${gcp_zone} \
       --google-service-account ${runners_service_account} \
       --google-scopes https://www.googleapis.com/auth/cloud-platform \
